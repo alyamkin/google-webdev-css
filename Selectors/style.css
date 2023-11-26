@@ -1,0 +1,64 @@
+p[class~='class2'] {
+  color: red;
+}
+
+a[href^='https'] {
+  color: coral;
+}
+
+a[href$='.pdf']::before {
+  background-image: url(https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/fc7bLiJYf5US6QxTOKsF.png);
+}
+
+a[href$='.jpg']::before,
+a[href$='.png']::before {
+  background-image: url(https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/N79qCc0c06217YT4ofYM.png);
+}
+
+a::before {
+  content: '';
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-inline-end: 0.5rem;
+  opacity: 0.8;
+}
+
+.parent-align .icon {
+  background-image: url(https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/N79qCc0c06217YT4ofYM.png);
+  width: 5rem;
+  height: 5rem;
+  display: inline-block;
+  background-size: 100%;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.parent-align span {
+  vertical-align: middle;
+}
+
+li::marker {
+  color: coral;
+}
+
+::selection {
+  background: coral;
+  color: white;
+}
+
+:checked + p {
+  background-color: aqua;
+}
+
+.top * {
+  margin: 0;
+}
+
+.top > * + * {
+  margin-top: 10px;
+}
