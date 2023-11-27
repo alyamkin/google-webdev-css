@@ -1,0 +1,7 @@
+div {
+  color: red;
+}
+
+::selection {
+  color: aqua;
+}
