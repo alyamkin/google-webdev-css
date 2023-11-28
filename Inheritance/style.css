@@ -1,0 +1,61 @@
+/* .my-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  background: #eabdb3;
+  font: inherit;
+  text-align: center;
+}
+
+article a {
+  color: maroon;
+} */
+
+/* Inherit */
+/* strong {
+  font-weight: 900;
+}
+.my-component {
+  font-weight: 500;
+}
+
+.my-component strong {
+  font-weight: inherit;
+} */
+
+/* Initial */
+/* aside strong {
+  font-weight: initial;
+} */
+
+/* Unset */
+/* p {
+  margin-top: 2em;
+  color: goldenrod;
+  padding: 2em;
+  border: 1px solid;
+}
+
+aside p {
+  margin-top: unset;
+  color: unset;
+  all: unset;
+} */
+
+/* Misc */
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 125%;
+  line-height: 1.5;
+  color: #222;
+}
+
+h1 {
+  font-size: 3em;
+}
