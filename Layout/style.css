@@ -1,0 +1,123 @@
+/* span {
+  padding-top: 100px;
+  margin-right: 100px;
+  width: 100px;
+} */
+/* img {
+  width: 150px;
+  height: 150px;
+  float: left;
+} */
+/* 
+p {
+  clear: right;
+} */
+
+/* article {
+  display: flow-root;
+} */
+
+/* float */
+* {
+  box-sizing: border-box;
+}
+
+/* article {
+  width: 65%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+} */
+
+/* body > * {
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: salmon;
+}
+
+aside {
+  width: 30%;
+  background-color: aqua;
+  float: right;
+}
+
+main {
+  width: 70%;
+  background: green;
+  float: left;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: goldenrod;
+  clear: both;
+} */
+
+/* .parent {
+  border: 1px solid black;
+}
+
+.float {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.float-1 {
+  background: green;
+}
+.float-2 {
+  background: goldenrod;
+}
+.float-3 {
+  background: yellowgreen;
+}
+.float-4 {
+  background: salmon;
+}
+.float-4::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix::after {
+  content: '';
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+} */
+
+/* Columns */
+.countries {
+  column-count: 4;
+  column-gap: 1em;
+}
+
+/* Positioning */
+.my-element {
+  width: 100px;
+  height: 100px;
+  background: goldenrod;
+  position: relative;
+  top: 10px;
+}
+
+.another-element {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
