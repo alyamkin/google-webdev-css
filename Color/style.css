@@ -1,0 +1,19 @@
+:root {
+  --hex: #ff0000;
+  --hex-alpha: #00000080;
+  --rgb: rgb(183, 21, 64);
+  --rgb-percent: rgb(50%, 20%, 30%);
+  --rgb-alpha: rgb(0 0 0 / 30%);
+  --rgba-alpha: rgba(40, 23, 44, 0.5);
+  --hsl: hsl(344, 79%, 40%);
+  --hsl-alpha: hsl(160 50% 50% / 50%);
+  --hsla-alpha: hsl(160, 50%, 50%, 50%);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: var(--hsl);
+  color: aqua;
+  border: 2px solid currentColor;
+}
