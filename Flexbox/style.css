@@ -1,0 +1,206 @@
+/* PULL IN FONTS AND RESET */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://unpkg.com/modern-css-reset/dist/reset.min.css');
+
+/* SETTINGS */
+:root {
+  --color-primary: #3740ff;
+  --color-primary-dark: #272eb5;
+  --color-primary-light: #3740ff;
+  --color-primary-x-light: #e8f0fe;
+  --color-light: #ffffff;
+  --color-dark: #202124;
+  --color-off-white: #f3f4f4;
+  --color-mid: #5f6368;
+  --color-mid-dark: #3c4043;
+  --color-stroke: #dadce0;
+  --metric-gutter: 1.5rem;
+  --metric-box-spacing: 1rem;
+  --metric-radius: 3px;
+  --generic-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+    0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+  --font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* .page > * {
+  padding: 1rem;
+  display: inline-block;
+}
+
+body {
+  width: 400px;
+  height: 400px;
+  min-height: unset;
+  padding: 2rem;
+  border: 1px solid var(--color-stroke);
+  background: var(--color-off-white);
+  margin: 1rem auto;
+}
+
+.sidebar {
+  background: var(--color-primary-x-light);
+  outline: 1px solid var(--color-primary);
+  flex-grow: 1;
+  flex-basis: 12rem;
+}
+
+.content {
+  flex-basis: 0;
+  flex-grow: 2;
+  min-width: 70%;
+}
+
+.page {
+  background: var(--color-light);
+  border: 1px solid var(--color-stroke);
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* Flex direction */
+/* .container {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  writing-mode: vertical-rl;
+}
+
+.box {
+  border: 1px solid var(--color-stroke);
+  color: var(--color-primary-x-light);
+}
+
+.box-1 {
+  background: var(--color-primary);
+}
+.box-2 {
+  background: var(--color-primary-dark);
+}
+.box-3 {
+  background: var(--color-mid);
+} */
+
+/* Wrapping flex items */
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 400px;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+} */
+
+/* Controlling space inside flex items */
+/* .container {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+  flex: none;
+} */
+
+/* Allowing items to grow at different rates */
+
+/* .container {
+  display: flex;
+  width: 500px;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+}
+
+.container > div:nth-child(1) {
+  flex: 1;
+}
+.container > div:nth-child(2) {
+  flex: 2;
+}
+.container > div:nth-child(3) {
+  flex: 3;
+} */
+
+/* Reordering flex items */
+/* .container {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+}
+
+.container > div:nth-child(1) {
+  order: 2;
+} */
+
+/* Distributing space on the main axis */
+/* .container {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+  justify-content: flex-start;
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+} */
+
+/* Distributing space between flex lines */
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+  width: 500px;
+  height: 600px;
+  justify-content: flex-end;
+  align-content: center;
+  place-content: center flex-end;
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+} */
+
+/* Aligning items on the cross-axis */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary-x-light);
+  width: 900px;
+  height: 600px;
+  align-items: center;
+}
+
+.container > div {
+  background: var(--color-stroke);
+  padding: 1rem;
+}
+
+.container > div:nth-child(2) {
+  margin-left: auto;
+}
