@@ -1,0 +1,9 @@
+/* .box {
+  background-color: salmon;
+} */
+
+/* Collapsing margins */
+article {
+  display: flex;
+  flex-direction: column;
+}
