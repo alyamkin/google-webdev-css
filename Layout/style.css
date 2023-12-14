@@ -18,9 +18,9 @@ p {
 } */
 
 /* float */
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 /* article {
   width: 65%;
@@ -98,13 +98,13 @@ footer {
 } */
 
 /* Columns */
-.countries {
+/* .countries {
   column-count: 4;
   column-gap: 1em;
-}
+} */
 
 /* Positioning */
-.my-element {
+/* .my-element {
   width: 100px;
   height: 100px;
   background: goldenrod;
@@ -120,4 +120,82 @@ footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+} */
+
+/* BFC explanation */
+/* .outer {
+  border: 5px dotted rgb(214, 129, 137);
+  border-radius: 5px;
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 40px;
+  overflow: auto;
+}
+
+.float {
+  padding: 10px;
+  border: 5px solid rgba(214, 129, 137, 0.4);
+  border-radius: 5px;
+  background-color: rgba(233, 78, 119, 0.4);
+  color: #fff;
+  float: left;
+  width: 200px;
+  margin: 0 20px 0 0;
+} */
+
+/* BFC and margin collapsing */
+/* * {
+  box-sizing: border-box;
+}
+
+.outer {
+  outline: 5px dotted rgb(214, 129, 137);
+  border-radius: 5px;
+  margin-bottom: 0 0 40px 0;
+  overflow: auto;
+}
+
+p {
+  padding: 0;
+  margin: 20px 0 20px 0;
+  background-color: rgb(233, 78, 119);
+  color: #fff;
+} */
+
+/* BFC and floated element */
+.outer {
+  border: 5px dotted rgb(214, 129, 137);
+  border-radius: 5px;
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: auto;
+}
+
+.float {
+  padding: 10px;
+  border: 5px solid rgba(214, 129, 137, 0.4);
+  border-radius: 5px;
+  background-color: rgba(233, 78, 119, 0.4);
+  color: #fff;
+  float: left;
+  width: 200px;
+  margin: 0 20px 0 0;
+}
+
+.absolute {
+  padding: 10px;
+  border: 5px solid rgba(214, 129, 137, 0.4);
+  border-radius: 5px;
+  background-color: rgba(233, 78, 119, 0.4);
+  color: #fff;
+  position: absolute;
+  width: 200px;
+  margin: 0 20px 0 0;
+}
+
+.text {
+  /* overflow: auto; */
+  display: flow-root;
 }

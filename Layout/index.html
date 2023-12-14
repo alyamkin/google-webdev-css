@@ -7,6 +7,32 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- BFC and positioning element -->
+    <div class="outer">
+      <div class="absolute">I am a floated element.</div>
+      <div class="text">
+        I am text inside a div nested inside the outer box. I have overflow auto
+        which makes me a BFC and therefore I do not wrap.
+      </div>
+    </div>
+    <!-- BFC and floated element -->
+    <!-- <div class="outer">
+      <div class="float">I am a floated element.</div>
+      <div class="text">
+        I am text inside a div nested inside the outer box. I have overflow auto
+        which makes me a BFC and therefore I do not wrap.
+      </div>
+    </div> -->
+    <!-- BFC and margin collapsing -->
+    <!-- <div class="outer">
+      <p>I am paragraph one and I have a margin top and bottom of 20px;</p>
+      <p>I am paragraph two and I have a margin top and bottom of 20px;</p>
+    </div> -->
+    <!-- BFC explanation -->
+    <!-- <div class="outer">
+      <div class="float">I am a floated element.</div>
+      I am text inside the outer box.
+    </div> -->
     <!-- <p><span>span1</span><span>span2</span><span>span3</span></p> -->
     <!-- <article>
       <img
