@@ -1,0 +1,271 @@
+/* z-index */
+/* .demo > * {
+  width: 250px;
+  height: 200px;
+  position: relative;
+}
+
+.demo > * + * {
+  margin-top: -150px;
+  opacity: 0.8;
+  box-shadow: 0 -1px 10px rgba(0 0 0 / 60%);
+}
+
+.demo > :first-child {
+  background: aliceblue;
+  border: 2px solid lightblue;
+  z-index: 3;
+}
+
+.demo > :nth-child(2) {
+  background: pink;
+  border: 2px solid hotpink;
+  z-index: 1;
+}
+
+.demo > :last-child {
+  background: wheat;
+  border: 2px solid gold;
+  z-index: 2;
+} */
+
+/* Negative z-index */
+/* .my-element {
+  background: rgb(232 240 254 / 0.5);
+  border: 1px solid lightblue;
+  z-index: 0;
+  position: relative;
+}
+
+.my-element .child {
+  position: relative;
+  z-index: -1;
+
+  background: pink;
+  border: 1px solid hotpink;
+  padding: 1rem;
+  width: 275px;
+}
+
+.my-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+
+.child {
+  font-weight: bold;
+} */
+
+/* Stacking context */
+/* .top,
+.bottom {
+  width: 250px;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.inner {
+  padding: 20px;
+}
+
+.bottom {
+  z-index: 2;
+  margin-top: -90px;
+  opacity: 0.8;
+  box-shadow: 0 -1px 10px rgba(0 0 0 / 60%);
+}
+
+.top {
+  z-index: 1;
+  background: aliceblue;
+  border: 2px solid lightblue;
+}
+
+.bottom {
+  background: pink;
+  border: 2px solid hotpink;
+}
+
+.inner {
+  background: wheat;
+  border: 2px solid gold;
+}
+
+.top > .inner {
+  position: relative;
+  z-index: 999;
+}
+
+.bottom > .inner {
+  z-index: 2;
+} */
+
+/* Practice */
+
+/* .top > * {
+  margin-top: -50px;
+} */
+
+/* .top {
+  background: rgba(144 238 144 / 100%);
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.box-1 {
+  background: rgba(173 216 230 / 70%);
+  z-index: -1;
+  position: relative;
+  opacity: 0.99;
+  transform: rotate(10deg);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.box-2 {
+  margin-top: -100px;
+  background: rgba(240 128 128 / 70%);
+  position: relative;
+  z-index: 2;
+  opacity: 0.99;
+}
+
+.box-3 {
+  margin-top: -100px;
+  background: rgba(250 250 210 / 70%);
+  position: relative;
+  z-index: 1;
+}
+
+.top {
+  display: flex;
+  background: rgba(32 178 170 / 80%);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+.box-child {
+  width: 150px;
+  height: 50px;
+}
+
+.box-1 {
+  background: rgba(173 216 230 / 80%);
+  position: relative;
+}
+
+.box-2 {
+  background: rgba(240 128 128 / 80%);
+  margin-left: -150px;
+}
+
+.box-child-1 {
+  width: 120px;
+  height: 120px;
+  background: rgba(250 250 210 / 80%);
+  z-index: 1;
+  position: relative;
+}
+
+.box-child-2 {
+  margin-top: -50px;
+  width: 200px;
+  height: 200px;
+  background: rgba(250 160 122 / 80%);
+} */
+
+/* MDM example */
+* {
+  margin: 0;
+}
+
+html {
+  padding: 20px;
+  font: 12px/20px Arial, sans-serif;
+}
+
+div {
+  opacity: 0.7;
+  position: relative;
+}
+
+h1 {
+  font: inherit;
+  font-weight: bold;
+}
+
+#div1,
+#div2 {
+  border: 1px dashed #696;
+  padding: 10px;
+  background-color: #cfc;
+}
+
+#div1 {
+  z-index: 5;
+  margin-bottom: 190px;
+}
+
+#div2 {
+  z-index: 2;
+}
+
+#div3 {
+  z-index: 4;
+  position: absolute;
+  top: 40px;
+  left: 180px;
+  width: 330px;
+  border: 1px dashed #900;
+  background-color: #fdd;
+  padding: 40px 20px 20px;
+}
+
+#div4,
+#div5 {
+  border: 1px dashed #996;
+  background-color: #ffc;
+}
+
+#div4 {
+  z-index: 6;
+  margin-bottom: 15px;
+  padding: 25px 10px 5px;
+}
+
+#div5 {
+  z-index: 1;
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+
+#div6 {
+  z-index: 3;
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  width: 150px;
+  height: 125px;
+  border: 1px dashed #009;
+  padding-top: 125px;
+  background-color: #ddf;
+  text-align: center;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- MDM example -->
+    <div id="div1">
+      <h1>Division Element #1</h1>
+      <code>
+        position: relative;<br />
+        z-index: 5;
+      </code>
+    </div>
+    <div id="div2">
+      <h1>Division Element #2</h1>
+      <code>
+        position: relative;<br />
+        z-index: 2;
+      </code>
+    </div>
+    <div id="div3">
+      <div id="div4">
+        <h1>Division Element #4</h1>
+        <code>
+          position: relative;<br />
+          z-index: 6;
+        </code>
+      </div>
+
+      <h1>Division Element #3</h1>
+      <code>
+        position: absolute; <br />
+        z-index: 4;
+      </code>
+
+      <div id="div5">
+        <h1>Division Element #5</h1>
+        <code>
+          position: relative;<br />
+          z-index: 1;
+        </code>
+      </div>
+
+      <div id="div6">
+        <h1>Division Element #6</h1>
+        <code>
+          position: absolute;<br />
+          z-index: 3;
+        </code>
+      </div>
+    </div>
+    <!-- Practice -->
+    <!-- <div class="top">
+      <div class="box box-1">
+        <div class="box-child box-child-1">box-child-1</div>
+        <div class="box-child box-child-2">box-child-2</div>
+      </div>
+      <div class="box box-2"></div>
+    </div> -->
+    <!-- <div class="top">
+      <div class="box box-1">box 1</div>
+      <div class="box box-2">box 2</div>
+      <div class="box box-3">box 3</div>
+    </div> -->
+
+    <!-- <div class="bottom">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div> -->
+    <!-- Stacking context -->
+    <!-- <article>
+      <div class="top">
+        <code>z-index: 1;</code>
+        <div class="inner">
+          <code>z-index: 999;</code>
+        </div>
+      </div>
+      <div class="bottom">
+        <code>z-index: 2;</code>
+        <div class="inner">
+          <code>z-index: 2;</code>
+        </div>
+      </div>
+    </article> -->
+
+    <!-- Negative z-index -->
+    <!-- <div class="my-element">
+      <div class="child">I am behind my parent</div>
+    </div> -->
+
+    <!-- z-index -->
+    <!-- <article>
+      <div class="demo">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </article> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
