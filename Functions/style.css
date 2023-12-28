@@ -1,0 +1,160 @@
+/* Custom properties and var */
+/* :root {
+  --base-color: #ff00ff;
+}
+
+.my-element p {
+  background: var(--base-color, hotpink);
+} */
+
+/* Functions that return a value */
+/* .my-element a::before {
+  content: attr(href);
+} */
+
+/* calc() */
+/* :root {
+  --root-height: 5rem;
+}
+.my-element {
+  background-color: papayawhip;
+  width: calc(100% - 2rem);
+  height: calc(var(--root-height) * 3);
+  border: 1px solid gold;
+} */
+
+/* min() max() clamp() */
+/* .my-element {
+  background-color: papayawhip;
+  width: min(400px, 50%);
+  width: max(400px, 50%);
+  width: clamp(350px, 50%, 500px);
+  width: clamp(45ch, 50%, 75ch);
+  border: 1px solid gold;
+}
+
+.my-element p {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+} */
+
+/* Shapes */
+/* .circle {
+  clip-path: circle(50%);
+}
+
+.polygon {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+
+.demo {
+  display: flex;
+  column-gap: 20px;
+  max-width: 500px;
+}
+
+img {
+  width: 100%;
+} */
+
+/* Transforms */
+/* .box {
+  width: 200px;
+  height: 100px;
+  background-color: aquamarine;
+}
+
+.animate-rotation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  column-gap: 50px;
+} */
+
+/* Perspective */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-color: #ccc;
+  --black-color: #000;
+  --white-color: #fff;
+  --cube-face-front-color: hsla(0, 100%, 50%, 0.7);
+  --cube-face-right-color: hsla(60, 100%, 50%, 0.7);
+  --cube-face-back-color: hsla(120, 100%, 50%, 0.7);
+  --cube-face-left-color: hsla(180, 100%, 50%, 0.7);
+  --cube-face-top-color: hsla(240, 100%, 50%, 0.7);
+  --cube-face-bottom-color: hsla(300, 100%, 50%, 0.7);
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.scene {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--gray-color);
+  margin: 80px;
+  perspective: 400px;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform: translateZ(-100px);
+  transform-style: preserve-3d;
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--black-color);
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.cube__face--front {
+  background: var(--cube-face-front-color);
+  transform: rotateY(0deg) translateZ(100px);
+}
+.cube__face--right {
+  background: var(--cube-face-right-color);
+  transform: rotateY(90deg) translateZ(100px);
+}
+.cube__face--back {
+  background: var(--cube-face-back-color);
+  transform: rotateY(180deg) translateZ(100px);
+}
+.cube__face--left {
+  background: var(--cube-face-left-color);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.cube__face--top {
+  background: var(--cube-face-top-color);
+  transform: rotateX(90deg) translateZ(100px);
+}
+.cube__face--bottom {
+  background: var(--cube-face-bottom-color);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.cube.is-backface-hidden .cube__face {
+  backface-visibility: hidden;
+}
