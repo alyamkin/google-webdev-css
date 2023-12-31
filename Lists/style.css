@@ -1,0 +1,52 @@
+/* ul {
+  list-style-position: inside;
+  list-style-image: url('https://i.imgur.com/jMyOape.gif');
+  list-style-type: '💥';
+  list-style: none;
+}
+
+li::marker {
+  color: goldenrod;
+}
+
+h2 {
+  display: list-item;
+}
+
+h2::marker {
+  content: '💥';
+} */
+
+/* li::before {
+  content: '::before';
+  background: lightgray;
+  border-radius: 1ch;
+  padding-inline: 1ch;
+  margin-inline-end: 1ch;
+}
+
+dd {
+  display: list-item;
+  list-style-type: '🥵';
+  padding-inline-start: 1ch;
+} */
+
+li {
+  list-style-type: square;
+  padding-inline-start: 1ch;
+}
+
+li::marker {
+  color: hotpink;
+  font-size: 2rem;
+  animation: color-change 1s ease infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: hotpink;
+  }
+  50% {
+    color: goldenrod;
+  }
+}
