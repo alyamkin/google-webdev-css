@@ -1,0 +1,114 @@
+/* .square {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  background-color: violet;
+  transition-duration: 600ms;
+  transition-timing-function: ease-out;
+  transition-delay: 1000ms;
+  padding: 8px;
+}
+
+.square.tp-color {
+  transition-property: background-color, transform;
+}
+
+.square:is(:hover) {
+  background-color: cornflowerblue;
+  transform: scale(1.4);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+} */
+
+/* Transition delay */
+/* p {
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-item {
+  background-color: darkslateblue;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  transform: translateX(-100px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.wrapper:is(:hover, :focus) .menu-item {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.menu-item:nth-of-type(1) {
+  transition-delay: 0;
+}
+.menu-item:nth-of-type(2) {
+  transition-delay: 200ms;
+}
+.menu-item:nth-of-type(3) {
+  transition-delay: 400ms;
+}
+.menu-item:nth-of-type(4) {
+  transition-delay: 600ms;
+}
+.menu-item:nth-of-type(5) {
+  transition-delay: 800ms;
+} */
+
+/* Different transitions for enter or exit */
+.my-element {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: red;
+
+  /* This transition is applied on the "exit" transition */
+  transition: background 1s ease-in;
+}
+
+.my-element:hover {
+  background: blue;
+
+  /* This transition is applied on the "enter" transition */
+  transition: background 150ms ease;
+}
+
+/* Check if an animation triggers layout */
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: goldenrod;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  animation: move 2s ease infinite;
+}
+
+/* @keyframes move {
+  50% {
+    top: calc(90vh - 200px);
+    left: calc(90vw - 200px);
+  }
+} */
+
+@keyframes move {
+  50% {
+    transform: translate(calc(90vw - 200px), calc(90vh - 200px));
+  }
+}
