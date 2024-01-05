@@ -1,0 +1,43 @@
+html {
+  /* font-size: 100%; */
+}
+
+.box {
+  /* width: 500px; */
+  /* font-size: 20px; */
+  /* line-height: 2; */
+}
+
+p {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 1.4em;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 0.2em;
+  /* word-spacing: 2em; */
+  text-transform: capitalize;
+  text-decoration: underline blue;
+  /* text-decoration-line: overline underline line-through; */
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-indent: 10px;
+
+  /* overflow: hidden; */
+  white-space: normal;
+  /* text-overflow: ellipsis; */
+  /* word-break: break-all; */
+  text-align: left;
+  direction: ltr;
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+  text-shadow: 5px 5px 10px red;
+}
+
+p::first-letter {
+  font-size: 3em;
+}
+
+p::selection {
+  background-color: aquamarine;
+}
